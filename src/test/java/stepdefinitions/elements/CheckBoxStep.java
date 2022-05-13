@@ -29,8 +29,9 @@ public class CheckBoxStep extends Locators {
     public void iWillCheckSomeValuesFromCheckBox() throws InterruptedException {
         homeButton.click();
         Random random = new Random();
+        int randomNum = (int) ((Math.random() * (3 - 1)) + 1);
 
-        for (int i = 1; i <= ; i++) {
+        for (int i = 1; i <= randomNum; i++) {
             System.out.println(toogleList.size());
             int buttonRandom = random.nextInt(checkBoxList.size());
 
