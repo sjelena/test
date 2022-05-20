@@ -8,9 +8,11 @@ public class Action extends Locators {
     public void connection() {
         try {
             getDriver().get(baseUrl);
-            getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+            getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         } catch (Exception e){
-            System.out.println("Website did not reached.");
+            System.out.println("Website wasn't reached.");
         }
     }
 }
+
+//https://demoqa.com/Account/v1/User
